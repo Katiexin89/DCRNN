@@ -45,9 +45,22 @@ md PEMS-BAY
 
 # METR-LA
 python -m scripts.generate_training_data --output_dir=data/METR-LA --traffic_df_filename=data/metr-la.h5
+# output
+Generating training data
+x shape:  (34249, 12, 207, 2) , y shape:  (34249, 12, 207, 2)
+train x:  (23974, 12, 207, 2) y: (23974, 12, 207, 2)
+val x:  (3425, 12, 207, 2) y: (3425, 12, 207, 2)
+test x:  (6850, 12, 207, 2) y: (6850, 12, 207, 2)
 
 # PEMS-BAY
 python -m scripts.generate_training_data --output_dir=data/PEMS-BAY --traffic_df_filename=data/pems-bay.h5
+# output
+Generating training data
+x shape:  (52093, 12, 325, 2) , y shape:  (52093, 12, 325, 2)
+train x:  (36465, 12, 325, 2) y: (36465, 12, 325, 2)
+val x:  (5209, 12, 325, 2) y: (5209, 12, 325, 2)
+test x:  (10419, 12, 325, 2) y: (10419, 12, 325, 2)
+
 ```
 
 ## Graph Construction
