@@ -77,9 +77,40 @@ Besides, the locations of sensors in Los Angeles, i.e., METR-LA, are available a
 ```bash
 # METR-LA
 python run_demo.py --config_filename=data/model/pretrained/METR-LA/config.yaml
+# output
+Total number of trainable parameters: 372352
+- INFO - Horizon 01, MAE: 2.17, MAPE: 0.0517, RMSE: 3.76
+- INFO - Horizon 02, MAE: 2.47, MAPE: 0.0612, RMSE: 4.59
+- INFO - Horizon 03, MAE: 2.66, MAPE: 0.0683, RMSE: 5.16
+- INFO - Horizon 04, MAE: 2.82, MAPE: 0.0742, RMSE: 5.61
+- INFO - Horizon 05, MAE: 2.95, MAPE: 0.0792, RMSE: 5.98
+- INFO - Horizon 06, MAE: 3.06, MAPE: 0.0836, RMSE: 6.28
+- INFO - Horizon 07, MAE: 3.16, MAPE: 0.0875, RMSE: 6.54
+- INFO - Horizon 08, MAE: 3.25, MAPE: 0.0910, RMSE: 6.77
+- INFO - Horizon 09, MAE: 3.33, MAPE: 0.0941, RMSE: 6.97
+- INFO - Horizon 10, MAE: 3.40, MAPE: 0.0970, RMSE: 7.15
+- INFO - Horizon 11, MAE: 3.47, MAPE: 0.0996, RMSE: 7.31
+- INFO - Horizon 12, MAE: 3.54, MAPE: 0.1024, RMSE: 7.48
+Predictions saved as data/dcrnn_predictions.npz.
 
 # PEMS-BAY
 python run_demo.py --config_filename=data/model/pretrained/PEMS-BAY/config.yaml
+# output
+Total number of trainable parameters: 372352
+- INFO - Horizon 01, MAE: 0.85, MAPE: 0.0163, RMSE: 1.53
+- INFO - Horizon 02, MAE: 1.12, MAPE: 0.0225, RMSE: 2.22
+- INFO - Horizon 03, MAE: 1.31, MAPE: 0.0273, RMSE: 2.75
+- INFO - Horizon 04, MAE: 1.45, MAPE: 0.0312, RMSE: 3.17
+- INFO - Horizon 05, MAE: 1.56, MAPE: 0.0343, RMSE: 3.49
+- INFO - Horizon 06, MAE: 1.64, MAPE: 0.0369, RMSE: 3.74
+- INFO - Horizon 07, MAE: 1.72, MAPE: 0.0392, RMSE: 3.94
+- INFO - Horizon 08, MAE: 1.78, MAPE: 0.0411, RMSE: 4.11
+- INFO - Horizon 09, MAE: 1.83, MAPE: 0.0426, RMSE: 4.25
+- INFO - Horizon 10, MAE: 1.88, MAPE: 0.0440, RMSE: 4.37
+- INFO - Horizon 11, MAE: 1.92, MAPE: 0.0451, RMSE: 4.47
+- INFO - Horizon 12, MAE: 1.96, MAPE: 0.0462, RMSE: 4.55
+Predictions saved as data/dcrnn_predictions.npz.
+
 ```
 The generated prediction of DCRNN is in `data/results/dcrnn_predictions`.
 
