@@ -36,8 +36,12 @@ Here is an article about [Using HDF5 with Python](https://medium.com/@jerilkuria
 
 Run the following commands to generate train/test/val dataset at  `data/{METR-LA,PEMS-BAY}/{train,val,test}.npz`.
 ```bash
-# Create data directories
-mkdir -p data/{METR-LA,PEMS-BAY}
+# Create data directories (linux)
+mkdir -p data/{METR-LA,PEMS-BAY} 
+# Create data directories (windows)
+cd data
+md METR-LA
+md PEMS-BAY
 
 # METR-LA
 python -m scripts.generate_training_data --output_dir=data/METR-LA --traffic_df_filename=data/metr-la.h5
